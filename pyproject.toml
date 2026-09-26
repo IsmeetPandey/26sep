@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "runledger"
+version = "0.1.0"
+description = "Local-first execution receipts for reproducible CLI runs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Ismeet Pandey"}]
+dependencies = []
+
+[project.scripts]
+runledger = "runledger.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["runledger*"]
